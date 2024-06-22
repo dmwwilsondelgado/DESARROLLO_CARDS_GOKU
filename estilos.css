@@ -9,17 +9,17 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    margin: 0 150px;
     padding: 0;
 }
-
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    /* margin: 70px 110px 100px 110px 70px; */
+    padding: 70px 110px 100px 110px 70px;
 }
 
 .card {
@@ -31,22 +31,34 @@ body {
     width: calc(33% - 40px);
     box-sizing: border-box;
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 500px;
+    /* width: 370px; */
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    /* width: 50%; */
+    /* height: 100%; */
     display: block;
+    margin: 10px auto;
+    object-fit: contain; 
+    padding: 0 0 10px;
+    max-height: 400px;
+    width: 99%;
+    height: 61%;
 }
 
 .card .title {
     font-size: 1.5em;
     margin: 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 .card .text {
     margin: 0 15px 15px;
     color: #333;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
 }
 
 .card .button {
